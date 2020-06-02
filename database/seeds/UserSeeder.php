@@ -16,38 +16,38 @@ class UserSeeder extends Seeder
     public function run()
     {
         DB::table('users')->insert([
-            'phone' => '+992927001911',
+            'phone' => '992927001911',
             'email' => 'admin@gmail.com',
             'password' => Hash::make('admin123'),
             'role' => 'admin'
         ]);
         DB::table('users')->insert([
             'phone' => '+992927001911',
-            'email' => 'user@gmail.com',
+            'email' => 'manu6699@mail.ru',
             'password' => Hash::make('user123'),
             'role' => 'user'
         ]);
         DB::table('users')->insert([
-            'phone' => '+992927001911',
-            'email' => 'user1@gmail.com',
+            'phone' => '992927001911',
+            'email' => 'manu66992@mail.ru',
             'password' => Hash::make('user123'),
             'role' => 'user'
         ]);
         DB::table('users')->insert([
-            'phone' => '+992927001911',
-            'email' => 'user2@gmail.com',
+            'phone' => '992927001911',
+            'email' => 'manu66991@mail.ru',
             'password' => Hash::make('user123'),
             'role' => 'user'
         ]);
         DB::table('users')->insert([
-            'phone' => '+992927001911',
+            'phone' => '992927001911',
             'email' => 'user3@gmail.com',
             'password' => Hash::make('user123'),
             'role' => 'user'
         ]);
         DB::table('users')->insert([
-            'phone' => '+992927001911',
-            'email' => 'operator@gmail.com',
+            'phone' => '992927001911',
+            'email' => 'muzafarov@yandex.ru',
             'password' => Hash::make('operator123'),
             'role' => 'operator'
         ]);

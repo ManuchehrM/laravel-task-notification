@@ -20,6 +20,10 @@ Laravel is accessible, powerful, and provides tools required for large, robust a
 - [Simple, fast routing engine](https://laravel.com/docs/routing).
 - [Migration](https://laravel.com/docs/7.x/migrations).
 - [Seeding](https://laravel.com/docs/7.x/seeding).
+- Console Commands.
+- NEXMO - for sms send.
+- Laravel class MAIL - for email send.
+- AJAX - show logs in modal window****.
 
 
 REQUIREMENTS
@@ -46,6 +50,30 @@ Create Database by name:
 For seeding your database with test data use seed classes:
 All seed classes are stored in the database/seeds directory.
 
+
+You can also use MySql dump file. Where located in the root folder (database.sql).
+
  ~~~
 php artisan db:seed
+ ~~~
+
+Console Commands and PHP Scripts located in:
+
+ ~~~
+app/Console/Commands/SendEmail
+app/Console/Commands/SendSms
+ ~~~
+
+For using this Console Commands run:
+You can also use this command from WebSite with operator role.
+ ~~~
+php artisan email:send test@gmail.com text-or-operator-message
+php artisan phone:send 992927001911 text-or-operator-message
+ ~~~
+
+Login (url: /login):
+
+ ~~~
+operator login: muzafarov@yandex.ru
+operator password: operator123
  ~~~

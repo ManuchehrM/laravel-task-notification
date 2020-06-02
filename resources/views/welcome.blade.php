@@ -8,7 +8,9 @@
                     <div class="card-header">Home Page</div>
                     <div class="card-body text-center">
                         <h2>Welcome!</h2><br>
+                        @if(Auth::user())
                         <a href="/cabinet" class="btn btn-success"><i class="fa fa-user"></i> Go To {{Auth::user()->role}} Dashboard</a>
+                        @endif
                     </div>
                 </div>
             </div>
