@@ -20,6 +20,7 @@ class CreateNotificationsLogTable extends Migration
             $table->string('message');
             $table->text('status_description')->nullable();
             $table->tinyInteger('status')->default(1);
+            $table->enum('notify_type', ['email', 'phone'])->default('email');
             $table->timestamps();
             $table->foreign('user_id')->references('id')->on('users');
 

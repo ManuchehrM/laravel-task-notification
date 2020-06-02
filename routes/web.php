@@ -29,4 +29,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::group(['middleware'  => ['auth','admin']], function() {
     Route::get('/cabinet', 'HomeController@cabinet')->name('cabinet');
+    Route::match(['get', 'post'],'/send', 'HomeController@send')->name('send');
+    Route::get('/getlogs/{uid}', 'HomeController@getnotifylogs');
 });
+
