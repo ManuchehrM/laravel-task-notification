@@ -41,7 +41,7 @@ class SendSms extends Command
     //021947d2
     public function handle()
     {
-        $basic  = new \Nexmo\Client\Credentials\Basic('021947d2', '7ITflO7NjhwZQUD9');
+        $basic  = new \Nexmo\Client\Credentials\Basic('26d65fc0', 'aBsQz8E7n6qOpAP3');
         $client = new \Nexmo\Client($basic);
         $message = $client->message()->send([
             'to' => $this->argument('phone'),
