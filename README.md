@@ -17,13 +17,13 @@ Implemented on the Laravel framework
 Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
 ## Used Components
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
+- [Routing](https://laravel.com/docs/routing).
 - [Migration](https://laravel.com/docs/7.x/migrations).
 - [Seeding](https://laravel.com/docs/7.x/seeding).
 - Console Commands.
 - NEXMO - for sms send.
 - Laravel class MAIL - for email send.
-- AJAX - show logs in modal window****.
+- AJAX - show logs in modal window.
 
 
 REQUIREMENTS
@@ -37,7 +37,7 @@ INSTALLATION
 After cloning or download project run:
 
  ~~~
- php composer install
+ composer install
  ~~~
 
 ## Database
